@@ -1,0 +1,45 @@
+### Register User
+POST http://localhost:8080/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "firstname": "Wagner",
+  "lastname": "Pires",
+  "email":  "wagnerdba@gmail.com",
+  "password": "852963",
+  "role":  "ADMIN"
+}
+
+> {% client.global.set("auth-token", response.body.access_token);  %}
+
+### Authenticate User
+POST http://localhost:8080/api/v1/auth/authenticate
+Content-Type: application/json
+
+{
+  "firstname": "Admin",
+  "lastname": "Admin",
+  "email":  "admin@mail.com",
+  "password": "password",
+  "role":  "ADMIN"
+}
+
+> {% client.global.set("auth-token", response.body.access_token);  %}
+
+### Authenticate User
+POST http://localhost:8080/api/v1/auth/authenticate
+Content-Type: application/json
+
+{
+  "firstname": "Wagner",
+  "lastname": "Pires",
+  "email":  "wagnerdba@gmail.com",
+  "password": "password",
+  "role":  "ADMIN"
+}
+
+> {% client.global.set("auth-token", response.body.access_token);  %}
+
+### Query the Demo endpoint
+GET http://localhost:8080/api/v1/demo-controller
+Authorization: Bearer {{auth-token}}
