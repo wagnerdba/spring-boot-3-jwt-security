@@ -6,7 +6,7 @@ Content-Type: application/json
   "firstname": "Wagner",
   "lastname": "Pires",
   "email":  "wagnerdba@gmail.com",
-  "password": "852963",
+  "password": "123456",
   "role":  "ADMIN"
 }
 
@@ -34,7 +34,7 @@ Content-Type: application/json
   "firstname": "Wagner",
   "lastname": "Pires",
   "email":  "wagnerdba@gmail.com",
-  "password": "852963",
+  "password": "123456",
   "role":  "ADMIN"
 }
 
