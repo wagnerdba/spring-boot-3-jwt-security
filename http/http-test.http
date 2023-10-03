@@ -34,7 +34,7 @@ Content-Type: application/json
   "firstname": "Wagner",
   "lastname": "Pires",
   "email":  "wagnerdba@gmail.com",
-  "password": "password",
+  "password": "852963",
   "role":  "ADMIN"
 }
 
